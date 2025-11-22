@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <style>
- /* 
+    /* 
  
  3 selectors :
             class selector ==> .classname{}
@@ -16,24 +16,30 @@
             attribute selector ==> element[title='heading']    
 
     combinator
+
+    element selctor,class selecotr{
+    }
  */
-h1{
-    color: blue;
-}
+    h1 {
+        color: blue;
+    }
 
-.heading{
-    color: brown;
-}
+    .heading {
+        color: brown;
+    }
 
-p[title="heading"]{
-    background-color: aqua;
-}
+    /*grouping selector/grouping combinators*/
+    .par,
+    #par2,
+    p[title="heading"] {
+        background-color: aqua;
+    }
 
-/* #title1{
+    /* #title1{
     color: blueviolet;
 } */
-
 </style>
+
 <body>
 
     <h1 class="heading" id="title1">Royal technosoft</h1>
