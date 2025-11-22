@@ -1,0 +1,28 @@
+Web Development :
+
+--> frontend = html,css, js
+--> backend = dataabse
+--> fullstack = database client side application
+
+CSS uscase ==> static webpadge styling,animation and effects
+
+CSS - Cascading Style Sheet
+
+CSS In Industries 
+1) Web Development --> bg clor,bg image element sizing
+2) Animation Studio --> website animation
+
+Framework/library of css
+---------------------------
+1)tailwind 
+2)bootstrap
+3)material ui
+4)shadcn
+    .
+    .
+    .
+
+3 ways to impliment CSS : 
+1) inline css => style attritube
+2) internal css => style tag
+3) external css => .css extention text file

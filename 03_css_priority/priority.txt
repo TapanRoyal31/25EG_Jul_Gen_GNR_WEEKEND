@@ -1,0 +1,10 @@
+css way:
+--------------------
+
+inline css > external css > internal css
+
+
+css selector:
+---------------------
+
+id selector > class selector > element selector
