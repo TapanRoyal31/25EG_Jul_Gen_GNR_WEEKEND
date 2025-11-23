@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+    
+    Descendant combinator (space)
+    Child combinator (>)
+    Next sibling combinator (+)
+    Subsequent-sibling combinator (~) 
+    
+    */
+
+    body {
+        background-color: #212121;
+    }
+
+    .grandparent {
+        border: 2px solid black;
+    }
+
+    .parent {
+        border: 2px solid red;
+    }
+
+    .grandparent p {
+        color: aliceblue;
+    }
+
+    .parent>p {
+        color: aqua;
+    }
+
+    .parent+p {
+        color: yellow;
+    }
+
+    .parent~p {
+        color: lightsalmon;
+    }
+</style>
+
+<body>
+    <div class="grandparent">
+        <div class="parent">
+            <p class="child">grandchild of div</p>
+        </div>
+        <p>sibling</p>
+        <h1>heandig 1</h1>
+        <p>next-sibling</p>
+        <div>
+            <p>hello</p>
+        </div>
+    </div>
+</body>
+
+</html>
