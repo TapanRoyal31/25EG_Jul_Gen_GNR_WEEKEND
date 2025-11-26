@@ -1,0 +1,22 @@
+/* uriversal / reset selector */
+
+*{
+    margin: 0;
+    padding: 0px;    
+}
+
+/* h1{
+    1px = 1/96 inch
+    font-size: 16px;
+} */
+
+
+/* p{
+    1 ch = '0' width
+    width: 10ch;
+    } */
+    
+p{
+    width: 50vw;
+    border: 2px solid red;
+}
