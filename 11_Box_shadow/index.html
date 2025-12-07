@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: white;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+
+    .box {
+        height: max-content;
+        font-weight: 700;
+        font-size: 1.5em;
+        width: 300px;
+        border-radius: 30px;
+        padding: 20px;
+        text-align: center;
+        transition: box-shadow 2s linear;
+    }
+
+    .box:hover {
+        /* x-axis y-axis blur blur-start */
+        box-shadow: /*inset 0px 0px 10px 10px rgba(0, 0, 0, 0.292),*/
+        inset 0px 0px 10px 10px rgba(0, 0, 0, 0.371);
+    }
+
+    /*
+    https://drazeforce-next11.vercel.app/
+    https://jomor-design-2019.webflow.io/
+    https://www.landing.love/
+    */
+</style>
+
+<body>
+    <div class="box">CSS Box-shadow</div>
+</body>
+
+</html>
