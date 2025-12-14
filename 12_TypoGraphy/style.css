@@ -1,0 +1,26 @@
+/* 
+    TypoGraphy means how to 
+    represent text/font in html or webpage 
+*/
+
+body {
+  padding: 10%;
+  font-size: 1.5rem;
+  color: white;
+  background: #212121;
+}
+/*
+font-style,font-weight,text-decoration,text-align,text-indent,letter-spaccing,word-spaccing
+*/
+
+
+/* input,button{
+  font-size: inherit;
+} */
+
+
+
+/* p{
+ color: aqua;
+} */
+

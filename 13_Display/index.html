@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #212121;
+        /* color: aliceblue; */
+    }
+
+    /* inline : text height and width */
+    /* block : element heigth and width */
+    /* inline-block :  block (height and width) inline (new line remove) */
+
+    div {
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        display: table; 
+        /* default block */
+    }
+
+    span {
+        /* default inline */
+        /* display: inline-block; */
+        height: 100px;
+        width: 100px;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div><div>Division</div><div>hello</div>
+        <div>justify</div>
+    </div>
+    <span>Span</span>
+</body>
+
+</html>
