@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  color: aliceblue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  width: 480px;
+  display: grid;
+  place-items: start;
+}
+
+img {
+  border-radius: 16px;
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.text-container {
+  height: max-content;
+  border-radius: 16px;
+  background-color: rgba(78, 182, 70, 0.738);
+  /* background: transparent; */
+  text-align: justify;
+  padding: 8px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}

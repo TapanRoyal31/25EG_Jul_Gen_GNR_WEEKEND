@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid templates</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #212121;
+        color: aliceblue;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        height: 300px;
+        width: 500px;
+        display: grid;
+        grid-template-areas: 'header header header'
+            'latest main main'
+            'footer footer footer';
+        gap: 20px;
+    }
+
+    .header {
+        background-color: aqua;
+        grid-area: header;
+    }
+
+    .main {
+        background-color: lightslategray;
+        grid-area: main;
+    }
+
+    .footer {
+        background-color: cadetblue;
+        grid-area: footer;
+    }
+
+    .latest {
+        background-color: green;
+        grid-area: latest;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            Header
+        </div>
+        <div class="main">
+            Main
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+        <div class="latest">
+            latest
+        </div>
+    </div>
+</body>
+
+</html>

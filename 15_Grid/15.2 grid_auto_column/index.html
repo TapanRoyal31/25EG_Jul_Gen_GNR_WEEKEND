@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #212121;
+        border: 2px solid red;
+    }
+
+    .grid-container {
+        gap: 10px;
+        display: grid;
+        /* grid-template-columns: 150px 150px 150px 150px; */
+        grid-template-rows: 150px 150px 150px;
+
+        grid-auto-rows: 150px;
+        grid-auto-columns: 150px;
+        /* grid-auto-flow: row; */
+    }
+
+    .box {
+        background-color: blue;
+        color: antiquewhite;
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class='box'>Box1</div>
+        <div class='box'>Box2</div>
+        <div class='box'>Box3</div>
+        <div class='box'>Box4</div>
+        <div class='box'>Box5</div>
+        <div class='box'>Box6</div>
+        <div class='box'>Box7</div>
+        <div class='box'>Box8</div>
+        <div class='box'>Box9</div>
+    </div>
+</body>
+
+</html>
