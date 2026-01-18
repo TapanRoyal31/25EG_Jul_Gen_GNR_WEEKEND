@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.input-box {
+  position: relative;
+  width: 320px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 18px 20px;
+  font-size: 16px;
+  border: 2px solid aqua;
+  border-radius: 50px;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Glow effect on focus + hover */
+.input-box input:focus,
+.input-box input:hover {
+  box-shadow: 0 0 12px aqua;
+  border-color: aqua;
+  background: transparent;
+}
+
+
+.input-box label {
+  position: absolute;
+  left: 22px;
+  top: 18px;
+  color: #bcbcbc;
+  pointer-events: none;
+  transition: 0.3s ease;
+  background-color: #212121;
+  padding: 0 6px;
+}
+
+
+/* Floating label effect */
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 12px;
+  color: aqua;
+}
