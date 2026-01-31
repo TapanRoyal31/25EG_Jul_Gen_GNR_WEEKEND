@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #212121;
+    }
+
+    .box{
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        border: 2px solid red;
+        /* animation-name: breathe;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1.5s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse; */
+        animation: breathe 2s ease-in-out infinite alternate-reverse;
+    }
+    
+    .box:hover{
+        animation-play-state: paused;
+    }
+
+    @keyframes breathe {
+        0%{
+            background-color: red;
+            transform: rotate(0deg);
+            transform: translate(0px);
+        }
+        50%{
+            transform: rotate(90deg);
+            background-color: yellow;
+        }
+        100%{
+            transform: rotate(180deg);
+            background-color: aqua;
+            transform: translate(200px);
+        }
+    }
+
+
+
+</style>
+<body>
+    <div class="box">Animation</div>
+</body>
+</html>
