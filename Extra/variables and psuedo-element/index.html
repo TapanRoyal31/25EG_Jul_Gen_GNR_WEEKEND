@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 
+    var() -> variable use
+    calc() -> calculation
+    min() -> minimum
+    max() -> maxium
+    */
+
+    :root {
+      --color: white;
+      --bgcolor: #212121;
+      --head: 12px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bgcolor);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* p{
+        height: 200px;
+        width: 200px;
+        background: var(--color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 2s ease;
+        font-size: var(--head) ;
+        font-family: cursive;
+        cursor: pointer;
+    }
+
+
+    p:hover{
+        background: aqua;
+        font-size: large;
+    }
+
+    button:focus{
+        background: white;
+        border-radius: 10px;
+        padding: 8px;
+        border: 2px solid red;
+    } */
+
+    .box{
+        color: beige;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box:hover::after {
+        content: "";
+        height: 30px;
+        width: 3px;
+        background: palevioletred;
+        border : 2px solid palevioletred;
+        transition: all 2s ease;
+        margin: 4px;
+    }
+  </style>
+  <body>
+    <!-- <p>Variables and hover</p> -->
+    <!-- <button >Submit</button> -->
+    <div class="box">CSS Box</div>
+  </body>
+</html>
